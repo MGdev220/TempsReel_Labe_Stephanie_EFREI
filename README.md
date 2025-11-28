@@ -1,24 +1,30 @@
-# shader-projet
+## Lancement — instructions rapides
 
-## Project setup
-```
+
+Prérequis
+
+- Node.js (version 14 ou supérieure)
+- npm (ou yarn)
+
+Installation et lancement (PowerShell)
+
+Ouvre PowerShell dans le dossier du projet puis :
+
+```powershell
+# Installer les dépendances 
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
+# Lancer le serveur de développement
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
+Le serveur par défaut écoute sur http://localhost:8080 
+
+Build de production
+
+```powershell
+# Construire l'application pour production
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
