@@ -1,16 +1,7 @@
-import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-
-
-export default defineConfig({
- 
-  base: '/TempsReel_Labe_Stephanie_EFREI-projet/', 
-  
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+const { defineConfig } = require('@vue/cli-service');
+module.exports = defineConfig({
+  transpileDependencies: true,
+  chainWebpack: config => {
+    config.plugins.delete('progress');
   }
-})
+});
